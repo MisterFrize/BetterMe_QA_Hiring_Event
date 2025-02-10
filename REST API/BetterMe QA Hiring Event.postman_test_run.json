@@ -1,0 +1,164 @@
+{
+	"id": "3d9d6746-d263-43af-a881-1e5561b5d354",
+	"name": "BetterMe QA Hiring Event",
+	"timestamp": "2025-02-10T11:55:42.225Z",
+	"collection_id": "26638535-3d169e41-580d-4235-b247-2f9bbdc9b8a8",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 7,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2025-02-10T11:55:38.725Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "0d3f1635-d1ff-46af-8190-d7d144ae0dbb",
+			"name": "Create Pet",
+			"url": "https://petstore.swagger.io/v2/pet",
+			"time": 675,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Статус код 200": true,
+				"Питомця створено з правильним ім'ям": true
+			},
+			"testPassFailCounts": {
+				"Статус код 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Питомця створено з правильним ім'ям": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				675
+			],
+			"allTests": [
+				{
+					"Статус код 200": true,
+					"Питомця створено з правильним ім'ям": true
+				}
+			]
+		},
+		{
+			"id": "fe4fb73f-e948-4a89-bd1f-cbf02dfff31c",
+			"name": "Get Pet by ID",
+			"url": "https://petstore.swagger.io/v2/pet/985639",
+			"time": 633,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Статус код 200": true,
+				"Отримано дані для створеного питомця": true
+			},
+			"testPassFailCounts": {
+				"Статус код 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Отримано дані для створеного питомця": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				633
+			],
+			"allTests": [
+				{
+					"Статус код 200": true,
+					"Отримано дані для створеного питомця": true
+				}
+			]
+		},
+		{
+			"id": "8b59aa92-892b-425f-b2ab-ad2d99ec7c65",
+			"name": "Update Pet With Form",
+			"url": "https://petstore.swagger.io/v2/pet/985639",
+			"time": 637,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Статус код 200": true
+			},
+			"testPassFailCounts": {
+				"Статус код 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				637
+			],
+			"allTests": [
+				{
+					"Статус код 200": true
+				}
+			]
+		},
+		{
+			"id": "64838af6-a49d-4a57-83d1-e64a68df5f8d",
+			"name": "Get Pet by ID (post-update)",
+			"url": "https://petstore.swagger.io/v2/pet/985639",
+			"time": 659,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Статус код 200": true,
+				"Питомця оновлено з новим ім'ям": true
+			},
+			"testPassFailCounts": {
+				"Статус код 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Питомця оновлено з новим ім'ям": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				659
+			],
+			"allTests": [
+				{
+					"Статус код 200": true,
+					"Питомця оновлено з новим ім'ям": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 2604,
+	"collection": {
+		"requests": [
+			{
+				"id": "0d3f1635-d1ff-46af-8190-d7d144ae0dbb",
+				"method": "POST"
+			},
+			{
+				"id": "fe4fb73f-e948-4a89-bd1f-cbf02dfff31c",
+				"method": "GET"
+			},
+			{
+				"id": "8b59aa92-892b-425f-b2ab-ad2d99ec7c65",
+				"method": "POST"
+			},
+			{
+				"id": "64838af6-a49d-4a57-83d1-e64a68df5f8d",
+				"method": "GET"
+			}
+		]
+	}
+}
